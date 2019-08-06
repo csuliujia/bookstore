@@ -15,11 +15,8 @@
 数据库：mysql
 
 首页地址 http://localhost:8080/index.do
-
+账号：可自行注册
+密码：可自行注册
 后台管理地址 http://localhost:8080/backLoginPage.do
-
-首页展示:
-![首页](https://github.com/Laverrr/bookstore/blob/master/index.jpg)
-
-后台展示:
-![后台](https://github.com/Laverrr/bookstore/blob/master/admin.jpg)
+账号admin
+密码admin

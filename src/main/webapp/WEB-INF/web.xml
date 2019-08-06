@@ -28,11 +28,11 @@
 
     <filter>
         <filter-name>login</filter-name>
-        <filter-class>com.laver.bookstore.util.LoginFilter</filter-class>
+        <filter-class>com.laver.bookstore.util.LoginFilter</filter-class><!--filter-name中的实现类-->
     </filter>
     <filter-mapping>
         <filter-name>login</filter-name>
-        <url-pattern>*.do</url-pattern>
+        <url-pattern>*.do</url-pattern><!--filter负责拦截的浏览器url地址，拦截后运行filter-name中的实现类-->
     </filter-mapping>
 
    <listener>
@@ -47,17 +47,15 @@
 
   <servlet>
         <servlet-name>springmvc</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class><!--servlet-name中的servlet实现类-->
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:springmvc_config.xml</param-value>
         </init-param>
-
     </servlet>
-
     <servlet-mapping>
         <servlet-name>springmvc</servlet-name>
-        <url-pattern>*.do</url-pattern>
+        <url-pattern>*.do</url-pattern><!--浏览器url地址，映射到servlet-name中的servlet实现类-->
     </servlet-mapping>
 
 </web-app>
